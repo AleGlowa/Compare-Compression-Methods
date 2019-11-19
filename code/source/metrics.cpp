@@ -19,14 +19,15 @@ int main() {
             std::cin >> number;
             if (column == distanceColumn)
                 dists.push_back(number);
-            else if (column == rDiffColumn)
-                dists.push_back(number);
+            else if (column == rDiffColumn) {
+                r_diffs.push_back(number);
+            }
         }
     }
 
     std::cout << "GeoAvg = " << PointUtils::averageGeoAcc(dists)
-              << "\tGeoMax = " << PointUtils::maxGeoAcc(dists) << std::endl;
-              //<< "\tAvgAbsDiffReflectivity = " << PointUtils::avgReflectivityDiff(r_diffs) << std::endl;
+              << "\tGeoMax = " << PointUtils::maxGeoAcc(dists)
+              << "\tAvgAbsDiffReflectivity = " << PointUtils::avgReflectivityDiff(r_diffs) << std::endl;
 
     return 0;
 }
