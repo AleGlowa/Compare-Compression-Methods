@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/orderPoints.dir/orderPoints.cpp.o CMakeFiles/orderPoints.dir/Point3D_64.cpp.o CMakeFiles/orderPoints.dir/PointUtils.cpp.o  -o orderPoints 
