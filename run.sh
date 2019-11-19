@@ -24,6 +24,7 @@ DO_ONLY_MAKE="0"
 DO_EXIT_AFTER_COMPILATION="0"
 
 DO_RUN="1"
+SAVE_PLOTS="0"
 
 #############################################################################################
 ### Compilation
@@ -60,9 +61,51 @@ fi
 
 # if here, you also want to run
 
-COMMAND="./code/build/test.exe" # for example, assuming you create an executable test.exe
+# FORMAT: x_uncompressed, y_uncompressed, z_uncompressed, r_uncompressed, x_decompressed,
+# y_decompressed, z_decompressed, r_decompressed, distance, r_difference (10 columns)
+comp_symbols=( "A" "B" "C" )
+for symbol in "${comp_symbols[@]}"; do
+    COMMAND="./code/build/orderPoints Car_XYZI_decompressed_ASCII_${symbol}.ply > ./output/${symbol}ordered.txt"
+    echo "COMMAND=${COMMAND}"
+    eval ${COMMAND}
+done
+
+# print metrics for every compress method
+for symbol in "${comp_symbols[@]}"; do
+    COMMAND="./code/build/metrics < ./output/${symbol}ordered.txt > ./output/${symbol}metrics.txt"
+    echo "COMMAND=${COMMAND}"
+    eval ${COMMAND}
+    
+    COMMAND="cat ./output/${symbol}metrics.txt"
+    echo "COMMAND=${COMMAND}"
+    eval ${COMMAND}
+done
+echo
+
+COMMAND="echo 1.B, 2.A, 3.C > ./output/methodsRanking.txt"
 echo "COMMAND=${COMMAND}"
 eval ${COMMAND}
+
+# make sure if matplotlib is installed
+if [[ ${SAVE_PLOTS} == "1" ]]; then
+    COMMAND="pip3 install -r ./code/source/requirements.txt"
+    echo
+    echo "COMMAND=${COMMAND}"
+    eval ${COMMAND}
+
+    # save plots
+    PY_ARGS=""
+    for symbol in "${comp_symbols[@]}"; do
+        PY_ARGS="${PY_ARGS}./output/${symbol}ordered.txt "
+    done
+    echo
+
+    COMMAND="python3 ./code/source/create_plots.py ${PY_ARGS}"
+    echo "COMMAND=${COMMAND}"
+    eval ${COMMAND}
+    echo "Plots have been saved"
+    echo
+fi
 
 #############################################################################################
 ### Done
