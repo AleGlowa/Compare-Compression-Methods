@@ -24,7 +24,8 @@ DO_ONLY_MAKE="0"
 DO_EXIT_AFTER_COMPILATION="0"
 
 DO_RUN="1"
-SAVE_PLOTS="0"
+SAVE_PLOTS="1"
+INSTALL_MATPLOTLIB="1"
 
 #############################################################################################
 ### Compilation
@@ -86,21 +87,18 @@ COMMAND="echo 1.B, 2.A, 3.C > ./output/methodsRanking.txt"
 echo "COMMAND=${COMMAND}"
 eval ${COMMAND}
 
-# make sure if matplotlib is installed
+
 if [[ ${SAVE_PLOTS} == "1" ]]; then
-    COMMAND="pip3 install -r ./code/source/requirements.txt"
-    echo
-    echo "COMMAND=${COMMAND}"
-    eval ${COMMAND}
+    # make sure if matplotlib is installed
+    if [[ ${INSTALL_MATPLOTLIB} == "1" ]]; then
+        COMMAND="pip3 install -r ./code/source/requirements.txt"
+        echo
+        echo "COMMAND=${COMMAND}"
+        eval ${COMMAND}
+    fi
 
     # save plots
-    PY_ARGS=""
-    for symbol in "${comp_symbols[@]}"; do
-        PY_ARGS="${PY_ARGS}./output/${symbol}ordered.txt "
-    done
-    echo
-
-    COMMAND="python3 ./code/source/create_plots.py ${PY_ARGS}"
+    COMMAND="python3 ./code/source/create_plots.py"
     echo "COMMAND=${COMMAND}"
     eval ${COMMAND}
     echo "Plots have been saved"
