@@ -16,7 +16,7 @@ def main():
     distances = defaultdict(list)
     r_diffs = defaultdict(list)
     avg_distance = defaultdict(float)
-
+    avg_r_diffs = defaultdict(float)
 
     for orderedPath, symbol in zip(orderedPaths, comp_symbols):
         with open(orderedPath) as orderedFile:
@@ -30,6 +30,7 @@ def main():
                 r_diffs[symbol].append(line[9])
             
             avg_distance[symbol] = np.average(distances[symbol])
+            avg_r_diffs[symbol] = np.average(r_diffs[symbol])
 
     element_vertex = len(uncompressPoints)
 
@@ -39,16 +40,25 @@ def main():
     fig.subplots_adjust(hspace=0.6)
     for ax, symbol in zip(axes, comp_symbols):
         ax.scatter(range(1, element_vertex + 1), distances[symbol])
-        ax.hlines(avg_distance[symbol], 1, element_vertex, 'yellow', linewidths=2)
+        ax.hlines(avg_distance[symbol], 1, element_vertex, 'yellow', linewidths=1.5)
         ax.set_title('Method {}'.format(symbol))
         ax.set_xlabel('point_id')
         ax.set_ylabel('distances')
 
     plt.savefig(outputPath / 'point_vs_distance.pdf')
 
-    #plt.show()
+    # point_id vs r_diff plots
+    fig, axes = plt.subplots(3, 1, sharex=True)
+    fig.suptitle('Comparision of the methods based on differences in reflectivity difference')
+    fig.subplots_adjust(hspace=0.6)
+    for ax, symbol in zip(axes, comp_symbols):
+        ax.bar(range(1, element_vertex + 1), r_diffs[symbol])
+        ax.hlines(avg_r_diffs[symbol], 1, element_vertex, 'yellow', linewidths=1.5)
+        ax.set_title('Method {}'.format(symbol))
+        ax.set_xlabel('point_id')
+        ax.set_ylabel('r_diffs')
 
-    
+    plt.savefig(outputPath / 'point_vs_r_diff.pdf')
 
 
 if __name__ == '__main__':
