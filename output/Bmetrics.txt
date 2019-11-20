@@ -1,1 +1,0 @@
-GeoAvg = 0.0014206542	GeoMax = 0.0014140721	AvgAbsDiffReflectivity = 0.0015112699
