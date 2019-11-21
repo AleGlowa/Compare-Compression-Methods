@@ -1,8 +1,9 @@
 #ifndef CONSTANTS_H
 #define CONSTANTS_H
 
+/* Constants connected with files' properties */
+
 #include <string>
-#include <vector>
 
 namespace Constants {
     const std::string inputPath{ "./input" };

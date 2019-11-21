@@ -34,7 +34,6 @@ public:
     double euclideanDistance(const Point3D_64 &point) const; // Calculate an euclidean distance
     inline double reflectivityDiff(const Point3D_64 &point) const { return std::abs(m_reflectivity - point.m_reflectivity); }
 
-    friend class PointUtils;
 };
 
 /* Point3D_64 Class */

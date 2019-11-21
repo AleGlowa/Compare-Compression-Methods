@@ -10,6 +10,7 @@ int main() {
     // and with 10 points after decimal point
     std::cout << std::fixed << std::setprecision(10);
 
+    // read distances & reflectivity differences
     int numColumns = 10;
     int distanceColumn = 9, rDiffColumn = 10;
     std::vector<double> dists, r_diffs;
@@ -25,6 +26,7 @@ int main() {
         }
     }
 
+    // print average distance, max distance and average absolute reflectivity difference
     std::cout << "GeoAvg = " << PointUtils::averageGeoAcc(dists)
               << "\tGeoMax = " << PointUtils::maxGeoAcc(dists)
               << "\tAvgAbsDiffReflectivity = " << PointUtils::avgReflectivityDiff(r_diffs) << std::endl;

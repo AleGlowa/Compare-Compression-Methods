@@ -1,0 +1,4 @@
+/home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/build/CMakeFiles/rebuild_cache.dir
+/home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/build/CMakeFiles/edit_cache.dir
+/home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/build/CMakeFiles/orderPoints.dir
+/home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/build/CMakeFiles/metrics.dir
