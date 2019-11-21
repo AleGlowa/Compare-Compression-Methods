@@ -3,8 +3,8 @@
 
 ### **Code Q&A**
 **Q**: Why you chose that algorithm(efficiency, CPU, RAM)?  
-**A**: I chose the brute force algorithm, to check fast if my approach to the problem is correct. I know that time complexity of this solution is O($n^2$) where
-   $n$ is number of points.
+**A**: I chose the brute force algorithm, to check fast if my approach to the problem is correct. I know that time complexity of this solution is O(n^2) where
+   n is number of points.
 
 **Q**: Do you obtain the same order as you obtained qualitatively by eye with CloudCompare?  
 **A**: My quantitative score confirmed my initial rating using CloudCompare.
@@ -13,7 +13,7 @@
 **A**: I designed the code thinking about its easier expansion.
 
 **Q**: If you had more time or computing resources, how would you improve the results?  
-**A**: I would focus on ordering points algorithm. I would implement the divide and conquere method, which should give the O($nlog(n)$) time complexity.
+**A**: I would focus on ordering points algorithm. I would implement the divide and conquere method, which should give the O(nlog(n)) time complexity.
 
 
 ### **Data analysis Q&A**
