@@ -13,7 +13,7 @@
 **A**: I designed the code thinking about its easier expansion.
 
 **Q**: If you had more time or computing resources, how would you improve the results?  
-**A**: I would focus on ordering points algorithm. I would implement the divide and conquere method, which should give the O($nlog(n)$) time complexity.
+**A**: I would focus on ordering points algorithm. I would implement the divide and conquere method, which should give the O(nlog(n)) time complexity.
 
 
 ### **Data analysis Q&A**
