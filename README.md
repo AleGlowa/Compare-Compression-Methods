@@ -28,6 +28,7 @@ AvgAbsDiffReflectivity( average absolute difference in reflectivity )
 - Bash
 - gcc/g++
 - CMake
+- Python
 
 ## **How to build and execute?**
 `./run.sh`
