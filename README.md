@@ -11,12 +11,12 @@ Car_uncompressed.png file charts the uncompressed point cloud.
 
 ## **Output of the program**
 Program saves:
-- Aordered.txt, Bordered.txt, Cordered.txt - ordered cloud points for each method
-- Ametrics.txt, Bmetrics.txt, Cmetrics.txt - metrics for each method. GeoAvg( average difference in distance ), GeoMax( maximum distance ),
+- **Aordered.txt, Bordered.txt, Cordered.txt** - ordered cloud points for each method
+- **Ametrics.txt, Bmetrics.txt, Cmetrics.txt** - metrics for each method. GeoAvg( average difference in distance ), GeoMax( maximum distance ),
 AvgAbsDiffReflectivity( average absolute difference in reflectivity )
-- methodsRanking.txt - from most accurate method to the least
-- point_vs_distance.pdf - plot which charts differences in distance and their mean
-- point_vs_r_diff.pdf - plot which charts differences in reflectivity and their mean
+- **methodsRanking.txt** - from most accurate method to the least
+- **point_vs_distance.pdf** - plot which charts differences in distance and their mean
+- **point_vs_r_diff.pdf** - plot which charts differences in reflectivity and their mean
 
 ## **Technologies**
 - C++11
