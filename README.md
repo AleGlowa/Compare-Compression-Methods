@@ -7,7 +7,7 @@ I'm adding it to my portfolio because it links C++ and Python together and that 
 ## **Input of the program**
 There are three files, each describe compressed point cloud with 2109 points obtained by three different compress methods. All are unordered.
 In order to compare compression methods, these points must be ordered according to uncompressed point cloud described in Car_XYZI_uncompressed_ASCII.ply file.
-Car_uncompressed.png file charts these uncompressed point cloud.
+Car_uncompressed.png file charts the uncompressed point cloud.
 
 ## **Output of the program**
 Program saves:
