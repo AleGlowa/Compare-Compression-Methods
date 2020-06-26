@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/source
+CMAKE_SOURCE_DIR = /home/alex/Code/C++/Compare-Compression-Methods/code/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/build
+CMAKE_BINARY_DIR = /home/alex/Code/C++/Compare-Compression-Methods/code/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/orderPoints.dir/depend.make
@@ -58,17 +58,17 @@ include CMakeFiles/orderPoints.dir/progress.make
 include CMakeFiles/orderPoints.dir/flags.make
 
 CMakeFiles/orderPoints.dir/orderPoints.cpp.o: CMakeFiles/orderPoints.dir/flags.make
-CMakeFiles/orderPoints.dir/orderPoints.cpp.o: /home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/source/orderPoints.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/orderPoints.dir/orderPoints.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/orderPoints.dir/orderPoints.cpp.o -c /home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/source/orderPoints.cpp
+CMakeFiles/orderPoints.dir/orderPoints.cpp.o: /home/alex/Code/C++/Compare-Compression-Methods/code/source/orderPoints.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/Code/C++/Compare-Compression-Methods/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/orderPoints.dir/orderPoints.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/orderPoints.dir/orderPoints.cpp.o -c /home/alex/Code/C++/Compare-Compression-Methods/code/source/orderPoints.cpp
 
 CMakeFiles/orderPoints.dir/orderPoints.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/orderPoints.dir/orderPoints.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/source/orderPoints.cpp > CMakeFiles/orderPoints.dir/orderPoints.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Code/C++/Compare-Compression-Methods/code/source/orderPoints.cpp > CMakeFiles/orderPoints.dir/orderPoints.cpp.i
 
 CMakeFiles/orderPoints.dir/orderPoints.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/orderPoints.dir/orderPoints.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/source/orderPoints.cpp -o CMakeFiles/orderPoints.dir/orderPoints.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Code/C++/Compare-Compression-Methods/code/source/orderPoints.cpp -o CMakeFiles/orderPoints.dir/orderPoints.cpp.s
 
 CMakeFiles/orderPoints.dir/orderPoints.cpp.o.requires:
 
@@ -82,17 +82,17 @@ CMakeFiles/orderPoints.dir/orderPoints.cpp.o.provides.build: CMakeFiles/orderPoi
 
 
 CMakeFiles/orderPoints.dir/Point3D_64.cpp.o: CMakeFiles/orderPoints.dir/flags.make
-CMakeFiles/orderPoints.dir/Point3D_64.cpp.o: /home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/source/Point3D_64.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/orderPoints.dir/Point3D_64.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/orderPoints.dir/Point3D_64.cpp.o -c /home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/source/Point3D_64.cpp
+CMakeFiles/orderPoints.dir/Point3D_64.cpp.o: /home/alex/Code/C++/Compare-Compression-Methods/code/source/Point3D_64.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/Code/C++/Compare-Compression-Methods/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/orderPoints.dir/Point3D_64.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/orderPoints.dir/Point3D_64.cpp.o -c /home/alex/Code/C++/Compare-Compression-Methods/code/source/Point3D_64.cpp
 
 CMakeFiles/orderPoints.dir/Point3D_64.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/orderPoints.dir/Point3D_64.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/source/Point3D_64.cpp > CMakeFiles/orderPoints.dir/Point3D_64.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Code/C++/Compare-Compression-Methods/code/source/Point3D_64.cpp > CMakeFiles/orderPoints.dir/Point3D_64.cpp.i
 
 CMakeFiles/orderPoints.dir/Point3D_64.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/orderPoints.dir/Point3D_64.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/source/Point3D_64.cpp -o CMakeFiles/orderPoints.dir/Point3D_64.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Code/C++/Compare-Compression-Methods/code/source/Point3D_64.cpp -o CMakeFiles/orderPoints.dir/Point3D_64.cpp.s
 
 CMakeFiles/orderPoints.dir/Point3D_64.cpp.o.requires:
 
@@ -106,17 +106,17 @@ CMakeFiles/orderPoints.dir/Point3D_64.cpp.o.provides.build: CMakeFiles/orderPoin
 
 
 CMakeFiles/orderPoints.dir/PointUtils.cpp.o: CMakeFiles/orderPoints.dir/flags.make
-CMakeFiles/orderPoints.dir/PointUtils.cpp.o: /home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/source/PointUtils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/orderPoints.dir/PointUtils.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/orderPoints.dir/PointUtils.cpp.o -c /home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/source/PointUtils.cpp
+CMakeFiles/orderPoints.dir/PointUtils.cpp.o: /home/alex/Code/C++/Compare-Compression-Methods/code/source/PointUtils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/Code/C++/Compare-Compression-Methods/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/orderPoints.dir/PointUtils.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/orderPoints.dir/PointUtils.cpp.o -c /home/alex/Code/C++/Compare-Compression-Methods/code/source/PointUtils.cpp
 
 CMakeFiles/orderPoints.dir/PointUtils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/orderPoints.dir/PointUtils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/source/PointUtils.cpp > CMakeFiles/orderPoints.dir/PointUtils.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Code/C++/Compare-Compression-Methods/code/source/PointUtils.cpp > CMakeFiles/orderPoints.dir/PointUtils.cpp.i
 
 CMakeFiles/orderPoints.dir/PointUtils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/orderPoints.dir/PointUtils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/source/PointUtils.cpp -o CMakeFiles/orderPoints.dir/PointUtils.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Code/C++/Compare-Compression-Methods/code/source/PointUtils.cpp -o CMakeFiles/orderPoints.dir/PointUtils.cpp.s
 
 CMakeFiles/orderPoints.dir/PointUtils.cpp.o.requires:
 
@@ -143,7 +143,7 @@ orderPoints: CMakeFiles/orderPoints.dir/Point3D_64.cpp.o
 orderPoints: CMakeFiles/orderPoints.dir/PointUtils.cpp.o
 orderPoints: CMakeFiles/orderPoints.dir/build.make
 orderPoints: CMakeFiles/orderPoints.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable orderPoints"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alex/Code/C++/Compare-Compression-Methods/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable orderPoints"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/orderPoints.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -162,6 +162,6 @@ CMakeFiles/orderPoints.dir/clean:
 .PHONY : CMakeFiles/orderPoints.dir/clean
 
 CMakeFiles/orderPoints.dir/depend:
-	cd /home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/source /home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/source /home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/build /home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/build /home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/build/CMakeFiles/orderPoints.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/alex/Code/C++/Compare-Compression-Methods/code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alex/Code/C++/Compare-Compression-Methods/code/source /home/alex/Code/C++/Compare-Compression-Methods/code/source /home/alex/Code/C++/Compare-Compression-Methods/code/build /home/alex/Code/C++/Compare-Compression-Methods/code/build /home/alex/Code/C++/Compare-Compression-Methods/code/build/CMakeFiles/orderPoints.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/orderPoints.dir/depend
 

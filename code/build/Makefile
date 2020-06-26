@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/source
+CMAKE_SOURCE_DIR = /home/alex/Code/C++/Compare-Compression-Methods/code/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/build
+CMAKE_BINARY_DIR = /home/alex/Code/C++/Compare-Compression-Methods/code/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/build/CMakeFiles /home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Code/C++/Compare-Compression-Methods/code/build/CMakeFiles /home/alex/Code/C++/Compare-Compression-Methods/code/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Code/C++/Teraki3DRecruitmentTestApr19/code/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alex/Code/C++/Compare-Compression-Methods/code/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
